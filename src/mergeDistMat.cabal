@@ -1,0 +1,43 @@
+cabal-version:  2.2
+build-type:     Simple
+
+name:           mergeDistMats
+version:        0.1.0.0
+--description:    Please see the README on GitHub at <https://github.com/wardwheeler/mergeDistMats>
+--homepage:       https://github.com/wardwheeler/mergeDistMats#readme
+--bug-reports:    https://github.com/wardwheeler/mergeDistMats/issues
+--author:         Author name here
+--maintainer:     example@example.com
+--copyright:      2021 Ward Wheeler
+--license:        BSD3
+--license-file:   LICENSE
+
+executable mergeDistMats
+
+  main-is: mergeDistMats.hs
+
+  ghc-options:  -Wall
+                -Wincomplete-patterns
+                -threaded 
+                -O2
+
+                -- for weeder
+ --               -fwrite-ide-info
+                -- for static linux
+ --               -optl-static -optl-pthreadgit pull--From matrices package (so 0 based)
+
+  build-depends:  base
+                , containers
+                , vector
+                , matrices 
+                , parallel
+                , split
+                , MissingH
+                , parsec
+                , deepseq
+                , process
+		            , logfloat
+
+  default-language: Haskell2010
+
+  other-modules:  
