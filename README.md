@@ -1,9 +1,9 @@
 # mergeDistMats
-Haskell program to merge distne matrices either with or without normilization.
+Haskell program to merge distance matrices either with or without normilization.
 
 Source files in src directory
 Test data files in testData 
-binaries for OSX nd linux in binaries
+binaries for OSX and linux in binaries
 Basic documentaion in docs
 
 Requires cabal and ghc
